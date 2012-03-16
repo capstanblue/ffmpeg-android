@@ -1,1 +1,1 @@
-#define FFMPEG_VERSION "git-8d1ac7b"
+#define FFMPEG_VERSION "git-0c2bc51"

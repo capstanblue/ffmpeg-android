@@ -20,14 +20,16 @@ for version in armv5te; do
 	DEST=../build/ffmpeg
 	FLAGS="--target-os=linux --cross-prefix=arm-linux-androideabi- --arch=arm"
 	FLAGS="$FLAGS --sysroot=$SYSROOT"
-#	FLAGS="$FLAGS --soname-prefix=/data/data/com.bambuser.broadcaster/lib/"
 	FLAGS="$FLAGS --enable-static --disable-symver"
 	FLAGS="$FLAGS --enable-small --optimization-flags=-O2"
 
 
-#	FLAGS="$FLAGS --disable-everything"
-#	FLAGS="$FLAGS --enable-protocol=file"
-#	FLAGS="$FLAGS --enable-decoder=mpeg4"
+	FLAGS="$FLAGS --disable-everything"
+	FLAGS="$FLAGS --enable-protocol=file"
+	FLAGS="$FLAGS --enable-parser=mpeg4video"
+	FLAGS="$FLAGS --enable-demuxer=mov"
+	FLAGS="$FLAGS --enable-decoder=mpeg4"
+
 
     FLAGS="$FLAGS --enable-version3 --enable-nonfree"
     FLAGS="$FLAGS --disable-doc --disable-ffserver"

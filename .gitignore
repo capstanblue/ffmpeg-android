@@ -1,0 +1,8 @@
+*.a
+*.o
+*.d
+build/
+ffmpeg/ffmpeg
+ffmpeg/ffmpeg_g
+ffmpeg/ffprobe
+ffmpeg/ffprobe_g
